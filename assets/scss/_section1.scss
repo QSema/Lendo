@@ -1,0 +1,175 @@
+.hero-section{
+    width: 100%;
+    height: 88vh;
+    background-image: url('../img/h1_hero.jpg.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .header{
+        width: 100%;
+        height: 10vh;
+        position: absolute;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .logo{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .buy{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            ul{
+                width: 63%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 0;
+                padding-left: 0;
+
+                li{
+                    list-style-type: none;
+                    font-family: "Jost",sans-serif;
+                    color: #fff;
+                    font-weight: 400;
+                    font-size: 16px;
+                    position: relative;
+                    cursor: pointer;
+
+                    &:before {
+                        position: absolute;
+                        background-color: #fff;
+                        content: "";
+                        display: block;
+                        width: 0%;
+                        height: 2px;
+                        left: 0;
+                        bottom: -15px;
+                        transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+                    }
+
+                    &:hover:before {
+                        color: #fff;
+                        width: 100%;
+                    }
+                }
+            }
+            .btn{
+                width: 28%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+
+                button{
+                    font-family: "Jost",sans-serif;
+                    position: relative;
+                    border: none;
+                    padding: 21px 21px 21px 65px !important;
+                    cursor: pointer;
+                    color: #fff !important;
+                    font-size: 18px !important;
+                    font-weight: 500 !important;
+                    background: #E61818;
+
+                    &::after{
+                        position: absolute;
+                        content: "";
+                        width: 20px;
+                        height: 1px;
+                        left: 34px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        background: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .best{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .test{
+            width: 65%;
+            height: 90%;;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+
+            h1{
+                font-size: 55px;
+                font-weight: 500;
+                color: #fff;
+                line-height: 1.2;
+                font-family: "Jost",sans-serif;
+                text-align: center;
+            }
+
+            p{
+                color: #fff;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 1.5;
+                font-family: "Jost",sans-serif;
+                text-align: center;
+            }
+
+            button{
+                font-family: "Jost",sans-serif;
+                color: #fff;
+                background: #E61818;
+                border: none;
+                padding: 21px 33px 21px 25px !important;
+                font-size: 18px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section{
+
+        .best{
+            .test{
+                width: 100% !important;
+                h1{
+                    font-size: 35px;
+                }
+                p{
+                    font-size: 21px;
+                }
+            }
+        }
+        .header{
+            .logo{
+                align-items: center !important;
+                justify-content: center !important;
+            }
+            .buy{
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,111 @@
+.hero{
+    width: 100%;
+    height: 60vh;
+    background: #F2F4F8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .serv{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .ice{
+            width: 60%;
+            height: 38%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            span{
+                color: #E61818;
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: 0.3em;
+                transform: rotate(-90deg);
+                position: absolute;
+                left: -36px;
+                top: 35px;
+            }
+
+            h2{
+                font-size: 40px;
+                font-family: "Jost",sans-serif;
+                font-weight: 400;
+                line-height: 1.2;
+                padding-left: 45px;
+                position: relative;
+            }
+        }
+    }
+
+    .pow{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        
+
+        .er{
+            width: 100%;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+            background-color: rgb(255, 255, 255);
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .hero{
+        height: auto !important;
+        .serv{
+            padding: 20px;
+            .ice{
+                width: 100% !important;
+                height: 85% !important;
+                margin-top: 20px;
+                margin-bottom: 18px;
+                align-items: flex-start;
+                h2{
+                    font-size: 31px;
+                }
+            }
+        }
+
+        .pow{
+            flex-direction: column;
+            justify-content: space-between;
+            .er{
+                margin-bottom: 20px;
+                padding: 50px;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .hero{
+        height: auto !important;
+        .serv{
+            .ice{
+                width: 95% !important;
+                height: 100% !important;
+                align-items: center;
+                h2{
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
